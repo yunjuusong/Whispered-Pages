@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Logo from '../Components/LOGO.png'; // Adjust the path to access the image
 import './book.css';
+import PDF from '../Components/the_story_of_a_fierce_bad_rabbit.pdf';
+import AudioFile from '../Components/the_story_of_a_fierce_bad_rabbit.txt.mp3';
+
+
 
 const recordAudio = () =>
   new Promise(async resolve => {
@@ -53,6 +57,14 @@ const App = () => {
       <img src={Logo} alt="Logo" />
       <button onClick={handleRecordButtonClick}>Start Recording</button>
       <button onClick={handlePlayButtonClick} disabled={!recording}>Play Recording</button>
+
+      <audio controls>
+          <source src= {AudioFile} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+
+      <iframe src= {PDF} width="100%" height="600px" ></iframe>
+
     </div>
   );
 };
