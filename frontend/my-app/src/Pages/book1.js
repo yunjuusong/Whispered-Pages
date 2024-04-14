@@ -35,13 +35,20 @@ const sleep = time => new Promise(resolve => setTimeout(resolve, time));
 
 const App = () => {
   const [recording, setRecording] = useState(null);
+  const [recorder, setRecorder] = useState(null);
 
   const handleRecordButtonClick = async () => {
-    const recorder = await recordAudio();
-    recorder.start();
-    await sleep(10000);
-    const recordedAudio = await recorder.stop();
-    setRecording(recordedAudio);
+    const newRecorder = await recordAudio();
+    setRecorder(newRecorder);
+    newRecorder.start();
+  };
+
+  const handleStopButtonClick = async () => {
+    if (recorder) {
+      const recordedAudio = await recorder.stop();
+      setRecording(recordedAudio);
+      setRecorder(null);
+    }
   };
 
   const handlePlayButtonClick = () => {
@@ -54,7 +61,8 @@ const App = () => {
     <div className="app-container">
       <img src={Logo} alt="Logo" className="bookLogo" />
       <div className="button-bar">
-        <button className="record-button" onClick={handleRecordButtonClick}>Start Recording</button>
+        <button className="record-button" onClick={handleRecordButtonClick} disabled={recorder !== null}>Start Recording</button>
+        <button className="stop-button" onClick={handleStopButtonClick} disabled={recorder === null}>Stop Recording</button>
         <button className="play-button" onClick={handlePlayButtonClick} disabled={!recording}>Play Recording</button>
       </div>
       <audio controls>
