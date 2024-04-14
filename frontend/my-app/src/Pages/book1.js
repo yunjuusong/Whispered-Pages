@@ -53,7 +53,12 @@ const App = () => {
 
   const handlePlayButtonClick = () => {
     if (recording) {
-      recording.audio.play();
+      const audioElement = recording.audio;
+      if (audioElement.paused) {
+        audioElement.play();
+      } else {
+        audioElement.pause();
+      }
     }
   };
 
@@ -62,8 +67,8 @@ const App = () => {
       <img src={Logo} alt="Logo" className="bookLogo" />
       <div className="button-bar">
         <button className="record-button" onClick={handleRecordButtonClick} disabled={recorder !== null}>Start Recording</button>
-        <button className="stop-button" onClick={handleStopButtonClick} disabled={recorder === null}>Stop Recording</button>
-        <button className="play-button" onClick={handlePlayButtonClick} disabled={!recording}>Play Recording</button>
+        <button className="record-button" onClick={handleStopButtonClick} disabled={recorder === null}>Stop Recording</button>
+        <button className="play-button" onClick={handlePlayButtonClick} disabled={!recording}>Play/Pause Recording</button>
       </div>
       <audio controls>
         <source src={AudioFile} type="audio/mp3" />
