@@ -1,5 +1,5 @@
-# Whispered-Pages-3
-An innovative ebook platform leveraging AI and personalized recordings to transform text into engaging audiobooks. Intended for busy parents seeking quality reading time with their children and individuals with learning disabilities.
+# Whispered-Pages
+An innovative ebook platform leveraging personalized recordings to transform text into engaging audiobooks. Intended for busy parents seeking quality reading time with their children and individuals with learning disabilities.
 
 # Purpose
 WhisperedPages is a digital platform hosting a curated collection of children's books. Guardians can record their own voice narrations for the stories, fostering closer connections with their children one book at a time. In a time where distance and life commitments separate us from loved ones, our platform aims to bridge gaps through the magic of storytelling. Additionally, text-to-speech options ensure accessibility for all children.
