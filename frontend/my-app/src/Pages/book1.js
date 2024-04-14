@@ -7,7 +7,7 @@ import './book.css';
 function book1() {
   return (
     <div className="book-container">
-      <img src={Logo} alt="Logo" className="logo" />
+      <img src={Logo} alt="Logo" className="bookLogo" />
       <div className="text-container">
         
       </div>

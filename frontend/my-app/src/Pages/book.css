@@ -9,7 +9,7 @@ body {
     margin-top: 50px; /* Adjust the top margin as needed */
   }
   
-  .logo {
+  .bookLogo {
     width: 100px; /* Set the width of the logo */
     height: auto; /* Maintain aspect ratio */
     display: block;
