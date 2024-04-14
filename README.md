@@ -22,5 +22,5 @@ npm start
 Enjoy!
 
 # Sources
-- [The Project Gutenberg] (https://www.gutenberg.org)
+- [The Project Gutenberg](https://www.gutenberg.org)
 
