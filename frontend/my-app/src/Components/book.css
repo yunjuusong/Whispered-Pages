@@ -9,13 +9,47 @@ body {
     margin-top: 50px; /* Adjust the top margin as needed */
   }
   
-  .logo {
+  .bookLogo {
     width: 100px; /* Set the width of the logo */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto 20px; /* Center the image horizontally and provide some bottom margin */
+    margin-top: 50px;
   }
   
   .text-container {
     background-color: white;
   }
+
+  .app-container {
+    position: relative;
+  }
+  
+  .button-bar {
+    position: absolute;
+    top: 200px; /* Adjust this value to start the bar lower */
+    right: 0;
+    height: calc(100% - 50px); /* Adjust the height accordingly */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .record-button,
+  .play-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .play-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
