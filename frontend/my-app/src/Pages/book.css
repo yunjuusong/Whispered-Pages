@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 200px; /* Adjust this value to start the bar lower */
     right: 0;
-    height: calc(100% - 50px); /* Adjust the height accordingly */
+    height: 550px; /* Adjust the height accordingly */
     background-color: white;
     display: flex;
     flex-direction: column;
