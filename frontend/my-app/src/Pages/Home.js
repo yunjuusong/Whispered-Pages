@@ -13,7 +13,7 @@ function Home() {
         <p>Start your reading adventure here!</p>
 
         {/* Make the bookpic clickable and direct to book1.js */}
-        <Link to="/Components/book1">
+        <Link to="/Book">
           <img src={BookPic} alt="BookPic" className="bookpic" />
         </Link>
       </div>
