@@ -1,0 +1,21 @@
+/* Home.css */
+
+body {
+    background-color: #cfe2f6; /* Set the background color of the entire page */
+  }
+  
+  .book-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the top margin as needed */
+  }
+  
+  .logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px; /* Center the image horizontally and provide some bottom margin */
+  }
+  
+  .text-container {
+    background-color: white;
+  }
