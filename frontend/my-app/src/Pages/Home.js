@@ -9,7 +9,7 @@ function Home() {
     <div className="home-container">
       <img src={Logo} alt="Logo" className="logo" />
       <div className="text-container">
-        <h1>Welcome to My Ebook Reading Platform</h1>
+        <h1>Whispered Pages Audio Ebook Reader</h1>
         <p>Start your reading adventure here!</p>
 
         {/* Make the bookpic clickable and direct to book1.js */}
